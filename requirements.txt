@@ -1,0 +1,4 @@
+undetected-chromedriver 
+requests 
+beautifulsoup4 
+webdriver-manager
