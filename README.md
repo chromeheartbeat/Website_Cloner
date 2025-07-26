@@ -84,16 +84,3 @@ pip install --upgrade undetected-chromedriver
 Using residential proxies
 
 Emulating real browser profiles
-
-⚠️ Disclaimer
-This tool is intended for educational and ethical use only.
-Do not use to clone or scrape websites without explicit permission.
-The author is not responsible for any misuse or legal issues.
-Always respect websites' Terms of Service and copyright laws.
-
-📁 License
-MIT License © [Solution]
-
-🙌 Contribute
-Feel free to submit issues, fork the repo, and send pull requests!
-We welcome improvements, bug fixes, and new features 🚀
