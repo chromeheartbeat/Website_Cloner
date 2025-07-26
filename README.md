@@ -41,27 +41,20 @@ bash
 
 python3 -m venv .venv
 source .venv/bin/activate
-Windows PowerShell:
 
-powershell
 
-python -m venv .venv
-.venv\Scripts\activate
 3. Install dependencies
 Using requirements file:
 
-bash
-
 pip install -r requirements.txt
+
 Or install individually:
-
-bash
-
 pip install undetected-chromedriver requests beautifulsoup4 webdriver-manager
+
 🧪 Usage
-bash
 
 python site_cloner.py
+
 A Chrome browser will open and load the target website.
 
 If a CAPTCHA appears, solve it manually.
@@ -73,10 +66,8 @@ The website will be saved to the cloned_selenium_site folder.
 ⚙️ Customization
 Change target URL:
 Edit this line in site_cloner.py:
-
-python
-
 clone_website("https://example.com")
+
 Modify behavior:
 Adjust cloning depth, asset filters, or custom rules directly in the script.
 
@@ -96,21 +87,13 @@ Emulating real browser profiles
 
 ⚠️ Disclaimer
 This tool is intended for educational and ethical use only.
-
 Do not use to clone or scrape websites without explicit permission.
-
 The author is not responsible for any misuse or legal issues.
-
 Always respect websites' Terms of Service and copyright laws.
 
 📁 License
-MIT License © [Your Name or Handle]
+MIT License © [Solution]
 
 🙌 Contribute
 Feel free to submit issues, fork the repo, and send pull requests!
 We welcome improvements, bug fixes, and new features 🚀
-
-
----
-
-Let me know if you want a dark-theme version for GitHub Pages or badges (e.g., Python version, license, last updated, etc.).
