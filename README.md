@@ -1,36 +1,54 @@
-# Website_Cloner
+# 🌐 Website_Cloner
 
-A Python tool to recursively clone websites using Selenium with undetected-chromedriver, designed to bypass basic bot detection like Cloudflare challenges by enabling manual captcha solving. It downloads pages, assets (images, scripts, styles), and rewrites internal links for offline browsing.
+A powerful Python tool to **recursively clone websites** using **Selenium** with `undetected-chromedriver`. Designed to bypass basic bot protections like **Cloudflare challenges**, it allows manual CAPTCHA solving and saves pages and assets for **offline browsing**.
 
-Features
-Uses undetected-chromedriver to reduce detection by bot protections
+---
 
-Opens a real Chrome browser for manual captcha solving
+## 🚀 Features
 
-Recursively clones pages within the same domain
+- 🕵️‍♂️ Uses `undetected-chromedriver` to evade bot detection
+- 🧠 Opens a real Chrome browser to manually solve CAPTCHAs
+- 🔄 Recursively clones pages within the same domain
+- 🎨 Downloads all assets (images, CSS, JS)
+- 🔗 Rewrites internal links for seamless offline browsing
 
-Downloads linked assets (images, CSS, JS)
+---
 
-Rewrites URLs for local browsing
+## 📦 Requirements
 
-Requirements
-Python 3.8 or higher
+- **Python** 3.8+
+- **Google Chrome** (latest version)
+- Python Packages:
+  - `undetected-chromedriver`
+  - `requests`
+  - `beautifulsoup4`
+  - `webdriver-manager`
 
-Google Chrome browser installed
+---
 
-Packages below
+## 🛠️ Installation
 
-Installation
-Clone or download this repository.
+### 1. Clone the repository
 
-(Optional but recommended) Create a virtual environment:
+```bash
+git clone https://github.com/chromeheartbeat/Website_Cloner.git
+cd Website_Cloner
+
+2. (Optional) Create and activate a virtual environment
+Linux/macOS:
 
 bash
 
+python3 -m venv .venv
+source .venv/bin/activate
+Windows PowerShell:
+
+powershell
+
 python -m venv .venv
-source .venv/bin/activate  # Linux/macOS
-.venv\Scripts\activate     # Windows PowerShell
-Install required packages:
+.venv\Scripts\activate
+3. Install dependencies
+Using requirements file:
 
 bash
 
@@ -40,37 +58,59 @@ Or install individually:
 bash
 
 pip install undetected-chromedriver requests beautifulsoup4 webdriver-manager
-Usage
-Run the script with Python:
-
+🧪 Usage
 bash
 
 python site_cloner.py
-A Chrome browser window will open and load the target website.
+A Chrome browser will open and load the target website.
 
-If a CAPTCHA appears, please solve it manually in the browser window.
+If a CAPTCHA appears, solve it manually.
 
-After you finish, return to the console and press Enter to continue cloning.
+Return to the terminal and press Enter to continue.
 
-The site will be saved in the cloned_selenium_site folder.
+The website will be saved to the cloned_selenium_site folder.
 
-Notes
-This tool is for educational purposes only.
+⚙️ Customization
+Change target URL:
+Edit this line in site_cloner.py:
 
-Do not use it to clone or scrape websites without permission.
+python
 
-The author is not responsible for any misuse or legal consequences resulting from improper use.
+clone_website("https://example.com")
+Modify behavior:
+Adjust cloning depth, asset filters, or custom rules directly in the script.
 
-Be respectful of website terms of service and copyright laws.
+💡 Troubleshooting
+✅ Ensure Google Chrome is installed and updated.
 
-Customize
-Change the URL to clone by editing the clone_website("https://example.com") line in site_cloner.py.
+⚠️ Update undetected-chromedriver if you encounter driver errors:
 
-Adjust cloning depth or asset types by modifying the script.
+bash
 
-Troubleshooting
-Make sure Google Chrome is installed and updated.
+pip install --upgrade undetected-chromedriver
+🔐 For persistent CAPTCHAs, consider:
 
-If you encounter errors with ChromeDriver, ensure your undetected-chromedriver package is up to date.
+Using residential proxies
 
-If captchas persist, consider using residential proxies or advanced browser profiles.
+Emulating real browser profiles
+
+⚠️ Disclaimer
+This tool is intended for educational and ethical use only.
+
+Do not use to clone or scrape websites without explicit permission.
+
+The author is not responsible for any misuse or legal issues.
+
+Always respect websites' Terms of Service and copyright laws.
+
+📁 License
+MIT License © [Your Name or Handle]
+
+🙌 Contribute
+Feel free to submit issues, fork the repo, and send pull requests!
+We welcome improvements, bug fixes, and new features 🚀
+
+
+---
+
+Let me know if you want a dark-theme version for GitHub Pages or badges (e.g., Python version, license, last updated, etc.).
